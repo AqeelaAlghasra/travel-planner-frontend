@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav>
+    <nav className='nav-bar'>
       {user ? (
         <ul>
           <li>Welcome, {user.username}</li>
