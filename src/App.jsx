@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router';
 import NavBar from './components/NavBar/NavBar';
 import SignUpForm from './components/SignUpForm/SignUpForm';
 import SignInForm from './components/SignInForm/SignInForm';
+import AI from "../src/AI"
 import Landing from './components/Landing/Landing';
 import Header from './components/Custom/Header';
 import { UserContext } from './contexts/UserContext';
@@ -27,6 +28,8 @@ const App = () => {
         <Route path='/create-trip' element={<CreateTrip/>} />
         <Route path='/sign-up' element={<SignUpForm />} />
         <Route path='/sign-in' element={<SignInForm />} />
+        <Route path='/AI' element={<AI />} />
+        
       </Routes>
       <Footer/>
     </>
